@@ -1,0 +1,35 @@
+{
+  "name": "codebase-refactoring-agent-skill",
+  "description": "Codebase Refactoring Agent Skill. Scans source files, runs standard lints and formatting, verifies logic, and proposes drop-in refactoring improvements.",
+  "version": "1.0.0",
+  "author": "alphaparkinc",
+  "inputs": {
+    "source_file_path": {
+      "type": "string"
+    },
+    "source_content": {
+      "type": "string"
+    },
+    "coding_rules": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["Remove unused imports", "Use descriptive variable names", "Keep methods under 30 lines"]
+    }
+  },
+  "outputs": {
+    "issues_detected": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "line_number": { "type": "integer" },
+          "rule_violated": { "type": "string" },
+          "explanation": { "type": "string" }
+        }
+      }
+    },
+    "refactored_content": {
+      "type": "string"
+    }
+  },
+  "prompt": "You are a code refactoring auditor agent. Review the codebase file inputs, check against specified style and coding rules, list compliance issues, and generate a clean refactored version of the file."
+}
