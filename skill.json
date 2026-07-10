@@ -1,8 +1,8 @@
 {
   "name": "codebase-refactoring-agent-skill",
-  "description": "Codebase Refactoring Agent Skill. Scans source files, runs standard lints and formatting, verifies logic, and proposes drop-in refactoring improvements.",
+  "description": "GenPark AI Agent Skill - Codebase Refactoring Agent Skill. Scans source files, runs standard lints and formatting, verifies logic, and proposes drop-in refactoring improvements.",
   "version": "1.0.0",
-  "author": "alphaparkinc",
+  "author": "genpark",
   "inputs": {
     "source_file_path": {
       "type": "string"
@@ -12,8 +12,14 @@
     },
     "coding_rules": {
       "type": "array",
-      "items": { "type": "string" },
-      "default": ["Remove unused imports", "Use descriptive variable names", "Keep methods under 30 lines"]
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Remove unused imports",
+        "Use descriptive variable names",
+        "Keep methods under 30 lines"
+      ]
     }
   },
   "outputs": {
@@ -21,9 +27,15 @@
       "type": "array",
       "items": {
         "properties": {
-          "line_number": { "type": "integer" },
-          "rule_violated": { "type": "string" },
-          "explanation": { "type": "string" }
+          "line_number": {
+            "type": "integer"
+          },
+          "rule_violated": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          }
         }
       }
     },
