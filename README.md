@@ -1,4 +1,4 @@
-# codebase-refactoring-agent-skill
+# genpark-codebase-refactoring-agent-skill
 
 > **GenPark AI Agent Skill** -- # Codebase Refactoring Agent Skill
 
