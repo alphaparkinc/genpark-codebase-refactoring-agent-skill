@@ -1,5 +1,5 @@
 {
-  "name": "codebase-refactoring-agent-skill",
+  "name": "genpark-codebase-refactoring-agent-skill",
   "description": "GenPark AI Agent Skill - Codebase Refactoring Agent Skill. Scans source files, runs standard lints and formatting, verifies logic, and proposes drop-in refactoring improvements.",
   "version": "1.0.0",
   "author": "genpark",
